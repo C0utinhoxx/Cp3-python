@@ -19,7 +19,7 @@ for i in range(len(temperaturas)):
 
     media = soma / len(temperaturas[i])
 
-    print(f"Sala {i + 1} Média: {media} Registros críticos: {criticos}")
+    print(f"Sala {i + 1} \n Média: {media} \n Registros críticos: {criticos}")
 
     if criticos > maior_criticos:
         maior_criticos = criticos
