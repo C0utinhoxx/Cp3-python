@@ -10,19 +10,19 @@ sala = 0
 
 for i in range(len(temperatura)):
     soma = 0
-    criticos = 0
+    critico = 0
 
     for temp in temperatura[i]:
         soma += temp
         if temp >= 33:
-            criticos += 1
+            critico += 1
 
     media = soma / len(temperatura[i])
 
-    print(f"Sala {i + 1} \n Média: {media} \n Registros críticos: {criticos}")
+    print(f"Sala {i + 1} \n Média: {media} \n Registros críticos: {critico}")
 
-    if criticos > maior:
-        maior = criticos
+    if critico > maior:
+        maior = critico
         sala = i + 1
 
 print()
